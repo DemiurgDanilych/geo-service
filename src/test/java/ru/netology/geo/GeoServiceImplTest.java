@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 import ru.netology.entity.Country;
 import ru.netology.entity.Location;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 class GeoServiceImplTest {
 	

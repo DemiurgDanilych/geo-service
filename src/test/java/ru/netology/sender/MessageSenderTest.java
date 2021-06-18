@@ -17,7 +17,7 @@ import static ru.netology.entity.Country.USA;
 class MessageSenderTest {
 	
 	@Test
-	void sendTestForRussiaId() {
+	void sendForRussiaIdTest() {
 		String iP = "172.123.12.19";
 		Country russia = RUSSIA;
 		
@@ -38,7 +38,7 @@ class MessageSenderTest {
 	}
 	
 	@Test
-	void sendTestForUSAId() {
+	void sendForUSAIdTest() {
 		String iP = "96.44.183.149";
 		Country usa = USA;
 		

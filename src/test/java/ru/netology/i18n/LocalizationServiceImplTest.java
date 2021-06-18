@@ -12,15 +12,14 @@ class LocalizationServiceImplTest {
 	void localeTest(Country country) {
 		LocalizationServiceImpl locServ = new LocalizationServiceImpl();
 		
+		String actual;
 		if (Country.RUSSIA.equals(country)) {
-			String actual = "Добро пожаловать";
-			String expected = locServ.locale(country);
-			Assertions.assertEquals(expected, actual);
+			actual = "Добро пожаловать";
 		} else {
-			String actual = "Welcome";
-			String expected = locServ.locale(country);
-			Assertions.assertEquals(expected, actual);
+			actual = "Welcome";
 			
 		}
+		String expected = locServ.locale(country);
+		Assertions.assertEquals(expected, actual);
 	}
 }
